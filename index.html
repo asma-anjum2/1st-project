@@ -7,150 +7,64 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .registration-form{
+            padding: 20px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 90vh;
-        margin: 0;
-        background-image: url('bg-registration-form-1.jpg');
-    }
-
-    .container {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 850px;
-        height: 550px;
-        margin-top: 40px;
-        position: relative;
-
-    }
-
-
-
-    .registration-form h2 {
-        margin-bottom: 20px;
-        text-align: center;
-        color: #333;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 5px;
-        color: #555;
-    }
-
-    .underline {
-        width: 100%;
-        padding: 8px 0;
-        border: none;
-        border-bottom: 2px solid #ddd;
-        background: transparent;
-        outline: none;
-        font-size: 16px;
-        color: #333;
-    }
-
-    i {
-        float: right;
-    }
-
-    .registration-form {
-        width: 400px;
-    }
-
-    .underline:focus {
-        border-bottom-color: #007bff;
-    }
-
-    button {
-        background-color: #28a745;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        transition: background-color 0.3s ease;
-    }
-
-    button .arrow {
-        margin-left: 10px;
-        font-size: 18px;
-    }
-
-    button:hover {
-        background-color: #218838;
-    }
-
-    .image {
-        float: right;
-        position: absolute;
-        top: 43px;
-        right: 15px;
-    }
-</style>
 
 <body>
-    <section>
-        <div class="container">
-            <form class="registration-form">
-                <h2>Registration Form</h2>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="underline" required>
-                </div>
-                <div class="form-group">
-                    <label for="username">Username <i class="fa-solid fa-user fa-2xs"></i></label>
-                    <input type="text" id="username" name="username" class="underline" required>
+    <section class="container">
 
-                    <!-- <input type="text" placeholder="Username"  class="form-control"> -->
-                </div>
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select id="gender" name="gender" class="underline" required>
-                        <option value="">Select...</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address<i class="fa-solid fa-envelope fa-2xs"></i> </label>
-                    <input type="email" id="email" name="email" class="underline" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password <i class="fa-solid fa-lock fa-2xs"></i></label>
-                    <input type="password" id="password" name="password" class="underline" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm <i class="fa-solid fa-lock fa-2xs"></i></label>
-                    <input type="password" id="confirm-password" name="confirm-password" class="underline" required>
-                </div>
-                <button type="submit">Register &nbsp;<i class="fa-solid fa-arrow-right-to-bracket fa-sm"></i></button>
-                <div class="form-link">
-                    <p class="signin-link">Do you have an account? <a href="login.html">login</a></p>
-                </div>
-            </form>
-            <div class="image">
-                <img src="/img1.jpg" alt="">
+        <form class="registration-form">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <!-- <label for="name">Name</label> -->
+                <input type="text" id="name" name="name" class="underline" placeholder="Name" required>
+                <i class="fa-solid fa-user fa-lg"></i>
             </div>
+            <div class="form-group">
+                <!-- <label for="username">Username <i class="fa-solid fa-user fa-2xs"></i></label> -->
+                <input type="text" id="username" name="username" class="underline" placeholder="Username" required>
+                <i class="fa-solid fa-user fa-lg"></i>
+
+                <!-- <input type="text" placeholder="Username"  class="form-control"> -->
+            </div>
+            <div class="form-group">
+                <!-- <label for="gender">Gender</label> -->
+                <select id="gender" name="gender" class="underline" placeholder="gender" required>
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!-- <label for="email">Email Address<i class="fa-solid fa-envelope fa-2xs"></i> </label> -->
+                <input type="email" id="email" name="email" class="underline" placeholder="email" required>
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+            <div class="form-group">
+                <!-- <label for="password">Password <i class="fa-solid fa-lock fa-2xs"></i></label> -->
+                <input type="password" id="password" name="password" class="underline" placeholder="password" required>
+            </div>
+            <div class="form-group">
+                <!-- <label for="confirm-password">Confirm <i class="fa-solid fa-lock fa-2xs"></i></label> -->
+                <input type="password" id="confirm-password" name="confirm-password" class="underline"
+                    placeholder="confirm-password" required>
+            </div>
+            <button type="submit">Register &nbsp;<i class="fa-solid fa-arrow-right-to-bracket fa-sm"></i></button>
+            <div class="form-link">
+                <p class="signin-link">Do you have an account? <a href="login.html">login</a></p>
+            </div>
+        </form>
+        <div class="image">
+                <img src="image2.jpg" alt="" srcset="" >
         </div>
-        
+
+
     </section>
 </body>
 

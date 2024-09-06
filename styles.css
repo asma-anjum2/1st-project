@@ -1,17 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90vh;
-    margin: 0;
-    background-image: url('bg-registration-form-1.jpg');
+    height: 100vh;
+    margin: auto;
+    background: linear-gradient(lightblue,blue);
 }
 
 .container {
@@ -20,9 +17,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 850px;
-    height: 550px;
-    margin-top: 40px;
-    position: relative;
+    height: 490px;
+    margin: auto;
+    margin-top: 3%;
 
 }
 
@@ -30,14 +27,16 @@ body {
     margin-bottom: 20px;
     text-align: center;
     color: #333;
+    margin: 20px;
 }
 
 .form-group {
     margin-bottom: 15px;
+    position: relative;
 }
 
 .form-link {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .form-group label {
@@ -58,17 +57,29 @@ body {
 }
 
 i {
-    float: right;
+     float: right;
 }
 
 .registration-form {
     width: 400px;
+    display: inline-block;
+    position: relative;
 }
 
 .underline:focus {
     border-bottom-color: #007bff;
 }
-
+i.fa-solid.fa-user.fa-lg {
+    position: absolute;
+    top: 1em;
+    left: 19em;
+}
+i.fa-solid.fa-envelope {
+    position: absolute;
+    font-size: 21px;
+    left: 18em;
+    top: 0.5em;
+}
 button {
     background-color: #28a745;
     color: #fff;
@@ -77,25 +88,36 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+     position: relative;
     transition: background-color 0.3s ease;
+    float: right;
 }
 
-button .arrow {
-    margin-left: 10px;
+button i {
+  margin-top: 8px;
     font-size: 18px;
 }
 
 button:hover {
     background-color: #218838;
+
+}
+  .image{
+    float:right;
+    margin-top: 30px;
 }
 
-.image {
-    float: right;
-    position: absolute;
-    top: 43px;
-    right: 15px;
+.image img{
+    height:450px;
+    width:400px;
+}
+.form-link{
+    margin-top: 40px;
+    text-align: center;
+}
+.form-link a{
+    text-decoration: none;
+    color: #218838;
+
 }
